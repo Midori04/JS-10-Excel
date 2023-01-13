@@ -20,6 +20,7 @@ input.addEventListener("change", function () {
     //             param.innerText = i[1] +" "+ i[2]
 
     //             divContainer.appendChild(param)
+    // }
 
     // Oppgave3
     // for (const i of data) {
@@ -98,7 +99,34 @@ input.addEventListener("change", function () {
     //     divContainer.appendChild(param);
     //   }
     // }
+
+//Oppgave7
+for (const i of data) {
+
+      if (i[1] == "Enuella" ) {
+
+          var para = document.createElement('img');
+
+          para.src = i[6];
+
+          divContainer.appendChild(para);
+
+          var param = document.createElement("p")
+
+          param.innerText = i[1] +" "+ i[2]
+
+          divContainer.appendChild(param)
+
+      }
+    }
+
+
+
   });
 });
+
+
+
+
 
 // uncomment oppgave koden for å sjekke koden :)
